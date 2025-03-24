@@ -1,0 +1,1708 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <title>Доверка</title>
+</head>
+
+<body>
+    <svg display="none">
+    <symbol id="click" viewBox="0 0 25 25">
+        <g>
+            <path
+                d="M12.665 6.22822C13.2508 6.22822 13.75 5.72908 13.75 5.14313V1.95304C13.75 1.3671 13.2508 0.857117 12.665 0.857117C12.079 0.857117 11.5799 1.3671 11.5799 1.95304V5.14313C11.5799 5.72908 12.079 6.22822 12.665 6.22822ZM7.79297 8.11623C8.21614 7.70392 8.21614 6.9986 7.80383 6.58629L5.59027 4.35104C5.17795 3.93872 4.47266 3.92785 4.06033 4.34019C3.63716 4.75253 3.63716 5.45782 4.04948 5.87013L6.26302 8.10538C6.67535 8.52855 7.38064 8.52855 7.79297 8.11623ZM17.4285 8.20304C17.8406 8.61535 18.5569 8.61535 18.9691 8.20304L21.1936 5.9678C21.606 5.55547 21.606 4.85018 21.1936 4.42699C20.7812 4.01467 20.076 4.02553 19.6527 4.43784L17.4285 6.67309C17.0161 7.08542 17.0161 7.79072 17.4285 8.20304ZM11.8077 20.6488C11.7968 21.1262 12.3611 21.2889 12.6757 20.9743L14.2708 19.3576L16.0829 23.839C16.1914 24.0886 16.4301 24.2295 16.7014 24.1318L17.8081 23.6978C18.0794 23.5786 18.1337 23.2855 18.0252 23.0577L16.1045 18.6306L18.3941 18.5655C18.8606 18.5546 19.0886 18.088 18.7522 17.7299L12.7192 11.5667C12.4045 11.252 11.9379 11.4257 11.927 11.8814L11.8077 20.6488ZM5.93749 12.9556C5.93749 12.3698 5.43837 11.8706 4.85244 11.8706H1.65148C1.06554 11.8706 0.566406 12.3698 0.566406 12.9556C0.566406 13.5416 1.06554 14.0407 1.65148 14.0407H4.85244C5.43837 14.0407 5.93749 13.5416 5.93749 12.9556ZM19.4031 12.9556C19.4031 13.5416 19.9024 14.0407 20.4883 14.0407H23.6785C24.2642 14.0407 24.7635 13.5416 24.7635 12.9556C24.7635 12.3698 24.2642 11.8706 23.6785 11.8706H20.4883C19.9024 11.8706 19.4031 12.3698 19.4031 12.9556ZM7.89063 17.7299C7.48914 17.3067 6.773 17.3067 6.36068 17.7191L4.13628 19.9327C3.7131 20.3449 3.7131 21.0502 4.11458 21.4626C4.53775 21.8857 5.24304 21.8966 5.66623 21.4843L7.89063 19.2599C8.30295 18.8476 8.3138 18.1423 7.89063 17.7299Z" />
+        </g>
+    </symbol>
+    <symbol id="arrow" viewBox="0 0 17 16">
+        <g>
+            <path
+                d="M0.292901 7.29295C-0.0975984 7.68345 -0.0975984 8.31663 0.292901 8.70716L6.6569 15.0711C7.0474 15.4616 7.6805 15.4616 8.0711 15.0711C8.4616 14.6806 8.4616 14.0474 8.0711 13.6569L2.4142 8.00005L8.0711 2.34315C8.4616 1.95265 8.4616 1.31955 8.0711 0.928952C7.6805 0.538452 7.0474 0.538452 6.6569 0.928952L0.292901 7.29295ZM17 7.00005L1 7.00005L1 9.00005L17 9.00005L17 7.00005Z" />
+        </g>
+    </symbol>
+    <symbol id="dollar" viewBox="0 0 22 22">
+        <g>
+            <path
+                d="M7.5 13.6667C7.5 14.9553 8.54467 16 9.83333 16H12C13.3807 16 14.5 14.8807 14.5 13.5C14.5 12.1193 13.3807 11 12 11H10C8.61929 11 7.5 9.88071 7.5 8.5C7.5 7.11929 8.61929 6 10 6H12.1667C13.4553 6 14.5 7.04467 14.5 8.33333M11 4.5V6M11 16V17.5M21 11C21 16.5228 16.5228 21 11 21C5.47715 21 1 16.5228 1 11C1 5.47715 5.47715 1 11 1C16.5228 1 21 5.47715 21 11Z"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+        </g>
+    </symbol>
+    <symbol id="euro" viewBox="0 0 22 22">
+        <g>
+            <path
+                d="M14.3333 7.27316C13.4487 6.48142 12.2806 6 11 6C8.23858 6 6 8.23858 6 11C6 13.7614 8.23858 16 11 16C12.2806 16 13.4487 15.5186 14.3333 14.7268M5 12.5H10M5 9.5H10M21 11C21 16.5228 16.5228 21 11 21C5.47715 21 1 16.5228 1 11C1 5.47715 5.47715 1 11 1C16.5228 1 21 5.47715 21 11Z"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+        </g>
+    </symbol>
+    <symbol id="yuan" viewBox="0 0 22 22">
+        <g>
+            <path
+                d="M14.3333 7.27316C13.4487 6.48142 12.2806 6 11 6C8.23858 6 6 8.23858 6 11C6 13.7614 8.23858 16 11 16C12.2806 16 13.4487 15.5186 14.3333 14.7268M5 12.5H10M5 9.5H10M21 11C21 16.5228 16.5228 21 11 21C5.47715 21 1 16.5228 1 11C1 5.47715 5.47715 1 11 1C16.5228 1 21 5.47715 21 11Z"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+        </g>
+    </symbol>
+    <symbol id="user" viewBox="0 0 43 46">
+        <g>
+            <path
+                d="M21.5 30C14.1033 30 7.52541 33.5715 3.3376 39.1139C2.43627 40.3068 1.98561 40.9032 2.00035 41.7093C2.01174 42.3321 2.40281 43.1178 2.89281 43.5023C3.52705 44 4.40596 44 6.16378 44H36.8362C38.594 44 39.473 44 40.1072 43.5023C40.5972 43.1178 40.9883 42.3321 40.9996 41.7093C41.0144 40.9032 40.5637 40.3068 39.6624 39.1139C35.4746 33.5715 28.8967 30 21.5 30Z"
+                stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+            <path
+                d="M21.5 23C27.2989 23 31.9998 18.299 31.9998 12.5C31.9998 6.70101 27.2989 2 21.5 2C15.7011 2 11.0002 6.70101 11.0002 12.5C11.0002 18.299 15.7011 23 21.5 23Z"
+                stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+        </g>
+    </symbol>
+</svg>
+    <div class="wrapper">
+        <header class="header">
+    <div class="header__main">
+        <div class="header__container">
+            <div class="header__row">
+                <a href="index.html" class="header__logo">
+                    <img src="img/logo.svg" alt="logo">
+                </a>
+                <nav class="header__menu menu-header" data-da="mobile-header__body, 0, 1299.98">
+                    <ul class="menu-header__list">
+                        <li class="menu-header__item">
+                            <a href="" class="menu-header__link link-scroll" data-scroll="about">О компании</a>
+                        </li>
+                        <li class="menu-header__item">
+                            <a href="" class="menu-header__link link-scroll" data-scroll="services">Услуги</a>
+                        </li>
+                        <li class="menu-header__item">
+                            <a href="" class="menu-header__link link-scroll" data-scroll="cases">Кейсы</a>
+                        </li>
+                        <li class="menu-header__item">
+                            <a href="" class="menu-header__link link-scroll" data-scroll="faq">FAQ</a>
+                        </li>
+                        <li class="menu-header__item">
+                            <a href="" class="menu-header__link link-scroll" data-scroll="contacts">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="header__actions">
+                    <a href="tel:880077577 75" class="header__tel" data-da="mobile-header__body, 2, 1299.98">8 800 775
+                        77 75</a>
+                    <a href="" class="header__btn btn btn_white btn_small" data-da="mobile-header__body, 1, 1299.98">
+                        Проконсультироваться
+                        <span>
+                            <svg>
+                                <use xlink:href="#click"></use>
+                            </svg>
+                        </span>
+                    </a>
+                </div>
+                <button class="header__burger">
+                    <span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="header__mobile mobile-header">
+        <div class="mobile-header__container container">
+            <div class="mobile-header__body"></div>
+        </div>
+    </div>
+</header>
+<div class="fixed-header">
+    <div class="fixed-header__row">
+        <nav class="fixed-header__menu menu-fixed-header">
+            <ul class="menu-fixed-header__list">
+                <li class="menu-fixed-header__item">
+                    <a href="" class="menu-fixed-header__link link-scroll" data-scroll="about">О компании</a>
+                </li>
+                <li class="menu-fixed-header__item">
+                    <a href="" class="menu-fixed-header__link link-scroll" data-scroll="services">Услуги</a>
+                </li>
+                <li class="menu-fixed-header__item">
+                    <a href="" class="menu-fixed-header__link link-scroll" data-scroll="cases">Кейсы</a>
+                </li>
+                <li class="menu-fixed-header__item">
+                    <a href="" class="menu-fixed-header__link link-scroll" data-scroll="faq">FAQ</a>
+                </li>
+                <li class="menu-fixed-header__item">
+                    <a href="" class="menu-fixed-header__link link-scroll" data-scroll="contacts">Контакты</a>
+                </li>
+            </ul>
+        </nav>
+        <a href="" class="fixed-header__btn btn btn_orange btn_small">
+            Проконсультироваться
+            <span>
+                <svg>
+                    <use xlink:href="#click"></use>
+                </svg>
+            </span>
+        </a>
+    </div>
+</div>
+        <main class="doverka">
+            <section class="fullscreen">
+                <div class="fullscreen__body">
+                    <div class="fullscreen__content">
+                        <h1 class="fullscreen__title">
+                            Быстрые и безопасные платежи
+                            для бизнеса за 24 часа
+                        </h1>
+                        <div class="fullscreen__subtitle">
+                            <p>
+                                Проводим международные платежи<br>
+                                безрисков, по курсу ЦБ РФ и с минимальными комиссиями
+                            </p>
+                        </div>
+                        <div class="fullscreen__btns">
+                            <a href="" class="fullscreen__btn btn btn_big btn_orange">Оставить заявку</a>
+                            <a href="" class="fullscreen__btn btn btn_big btn_border link-scroll"
+                                data-scroll="cost">Рассчитать платеж</a>
+                        </div>
+                        <div class="fullscreen__conditions conditions-fullscreen">
+                            <a href="" class="conditions-fullscreen__link">Условия акции</a>
+                            <span class="conditions-fullscreen__help">
+                                Полные условия акции
+                                “Международный перевод за 24 часа”
+                            </span>
+                        </div>
+                        <div class="fullscreen__valuta valuta">
+                            <span class="valuta__icon valuta__icon_dollar">
+                                <img src="img/icons/dollar.svg" alt="dollar">
+                            </span>
+                            <span class="valuta__icon valuta__icon_euro">
+                                <img src="img/icons/euro.svg" alt="euro">
+                            </span>
+                            <span class="valuta__icon valuta__icon_ruble">
+                                <img src="img/icons/ruble.svg" alt="ruble">
+                            </span>
+                            <span class="valuta__icon valuta__icon_yany">
+                                <img src="img/icons/yany.svg" alt="yany">
+                            </span>
+                        </div>
+                    </div>
+                    <div class="fullscreen__bottom">
+                        <div class="fullscreen__coins">
+                            <img src="img/fullscreen/coins.png" alt="coins">
+                        </div>
+                        <div class="fullscreen__resident resident-fullscreen">
+                            <div class="resident-fullscreen__text">
+                                Резидент<br>
+                                иннополиса
+                            </div>
+                            <div class="resident-fullscreen__logo">
+                                <img src="img/fullscreen/resident-logo.svg" alt="resident-logo">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="services">
+                <div class="services__container container">
+                    <div class="services__row">
+                        <div class="services__column">
+                            <div class="services__item">
+                                <div class="services__icon">
+                                    <img src="img/services/01.svg" alt="services-icon">
+                                </div>
+                                <div class="services__text">
+                                    Оплата счетов<br>
+                                    за 24 часа
+                                </div>
+                            </div>
+                        </div>
+                        <div class="services__column">
+                            <div class="services__item">
+                                <div class="services__icon">
+                                    <img src="img/services/02.svg" alt="services-icon">
+                                </div>
+                                <div class="services__text">
+                                    Обмен<br>
+                                    по курсу ЦБ РФ
+                                </div>
+                            </div>
+                        </div>
+                        <div class="services__column">
+                            <div class="services__item">
+                                <div class="services__icon">
+                                    <img src="img/services/03.svg" alt="services-icon">
+                                </div>
+                                <div class="services__text">
+                                    Обмен<br>
+                                    по курсу ЦБ РФ
+                                </div>
+                            </div>
+                        </div>
+                        <div class="services__column">
+                            <div class="services__item">
+                                <div class="services__icon">
+                                    <img src="img/services/04.svg" alt="services-icon">
+                                </div>
+                                <div class="services__text">
+                                    Работаем<br>
+                                    с нерезидентами
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <section class="payments">
+                <div class="payments__container container">
+                    <div class="payments__body">
+                        <h2 class="payments__title">
+                            Платежи по миру –<br> быстро и прозрачно
+                        </h2>
+                        <div class="payments__slider">
+                            <div class="payments__swiper swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="payments__item item-payments">
+                                            <div class="item-payments__icon">
+                                                <img src="img/payments/01.svg" alt="payments-icon">
+                                            </div>
+                                            <div class="item-payments__title">
+                                                Ваши платежи<br>
+                                                проходят медленно?
+                                            </div>
+                                            <div class="item-payments__text">
+                                                <p>
+                                                    Быстро проведем платеж за 24 часа
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="payments__item item-payments">
+                                            <div class="item-payments__icon">
+                                                <img src="img/payments/02.svg" alt="payments-icon">
+                                            </div>
+                                            <div class="item-payments__title">
+                                                Проблемы с оплатами<br>
+                                                нерезидентам?
+                                            </div>
+                                            <div class="item-payments__text">
+                                                <p>
+                                                    Помогаем оплачивать счета
+                                                    контрагентов по всему миру.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="payments__item item-payments">
+                                            <div class="item-payments__icon ">
+                                                <img src="img/payments/03.svg" alt="payments-icon">
+                                            </div>
+                                            <div class="item-payments__title">
+                                                Скрытые комиссии<br>
+                                                съедают прибыль?
+                                            </div>
+                                            <div class="item-payments__text">
+                                                <p>
+                                                    Работаем по курсу ЦБ РФ, что снижает
+                                                    затраты на переводы.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="payments__pagination pagination"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="team" id="about">
+                <div class="team__container container">
+                    <div class="team__row">
+                        <div class="team__slider">
+                            <div class="team__swiper swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="team__item item-team">
+                                            <div class="item-team__image ibg">
+                                                <img src="img/team/02.jpg" alt="team-img">
+                                            </div>
+                                            <div class="item-team__position">
+                                                Директор по развитию
+                                            </div>
+                                            <div class="item-team__info">
+                                                <div class="item-team__name">Кристина Семеняка</div>
+                                                <div class="item-team__education">Юрист по международному праву</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="team__item item-team">
+                                            <div class="item-team__image ibg">
+                                                <img src="img/team/01.jpg" alt="team-img">
+                                            </div>
+                                            <div class="item-team__position">
+                                                Директор по развитию
+                                            </div>
+                                            <div class="item-team__info">
+                                                <div class="item-team__name">Кристина Семеняка</div>
+                                                <div class="item-team__education">Юрист по международному праву</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="team__item item-team">
+                                            <div class="item-team__image ibg">
+                                                <img src="img/team/03.jpg" alt="team-img">
+                                            </div>
+                                            <div class="item-team__position">
+                                                Директор по развитию
+                                            </div>
+                                            <div class="item-team__info">
+                                                <div class="item-team__name">Кристина Семеняка</div>
+                                                <div class="item-team__education">Юрист по международному праву</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="team__pagination pagination"></div>
+                            </div>
+                            <div class="team__navigation navigation">
+                                <div class="navigation__btn navigation__btn_prev team__btn_prev">
+                                    <svg>
+                                        <use xlink:href="#arrow"></use>
+                                    </svg>
+                                </div>
+                                <div class="navigation__btn navigation__btn_next team__btn_next">
+                                    <svg>
+                                        <use xlink:href="#arrow"></use>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="team__content content-team">
+                            <div class="content-team__top">
+                                <h2 class="content-team__title">
+                                    Доверка — не просто<br> платежный агент
+                                </h2>
+                                <div class="content-team__subtitle">Мы — команда финансовых гуру.</div>
+                            </div>
+                            <div class="content-team__text">
+                                <p>
+                                    15+ лет в международном структурировании бизнеса.
+                                    Помогаем российским компаниям и физлицам
+                                    оплачивать иностранные счета, обходя санкции.
+                                </p>
+                            </div>
+                            <div class="content-team__info info-team">
+                                <div class="info-team__column">
+                                    <div class="info-team__item">
+                                        <div class="info-team__icon">
+                                            <img src="img/team/info/01.png" alt="info-icon">
+                                        </div>
+                                        <div class="info-team__text">
+                                            Cобственная платежная<br>
+                                            архитектура
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="info-team__column">
+                                    <div class="info-team__item">
+                                        <div class="info-team__icon">
+                                            <img src="img/team/info/02.png" alt="info-icon">
+                                        </div>
+                                        <div class="info-team__text">
+                                            Финансовые лицензии<br>
+                                            в разных юрисдикциях
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="info-team__column">
+                                    <div class="info-team__item">
+                                        <div class="info-team__icon">
+                                            <img src="img/team/info/03.png" alt="info-icon">
+                                        </div>
+                                        <div class="info-team__text">
+                                            100% прозрачные тарифы,<br>
+                                            никакой серой схемы
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="info-team__column">
+                                    <div class="info-team__item">
+                                        <div class="info-team__icon">
+                                            <img src="img/team/info/04.png" alt="info-icon">
+                                        </div>
+                                        <div class="info-team__text">
+                                            Персональное сопровождение<br>
+                                            на каждом этапе
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="for-whom">
+                <div class="for-whom__container container">
+                    <div class="for-whom__body">
+                        <div class="for-whom__main">
+                            <div class="for-whom__content">
+                                <h2 class="for-whom__title">
+                                    Для кого
+                                </h2>
+                                <div class="for-whom__text">
+                                    <p>
+                                        Мы работаем как с бизнесом,<br>
+                                        так и с частными клиентами, помогая проводить международные платежи быстро,
+                                        безопасно и по выгодным условиям. Наши решения подходят для юридических и
+                                        физических
+                                        лиц, которые ценят надёжность и скорость финансовых операций.
+                                    </p>
+                                </div>
+                            </div>
+                            <a href="" class="for-whom__btn btn btn_white btn_medium"
+                                data-da="info-for-whom__graph, 1, 1400.98">Стать клиентом</a>
+                        </div>
+                        <div class="for-whom__info info-for-whom">
+                            <div class="info-for-whom__items">
+                                <div class="info-for-whom__item">
+                                    <div class="info-for-whom__title">Юридические лица</div>
+                                    <ul class="info-for-whom__list">
+                                        <li class="info-for-whom__list-item">Производственные компании</li>
+                                        <li class="info-for-whom__list-item">Оптовые торговые компании</li>
+                                        <li class="info-for-whom__list-item">Логистические компании и агенты</li>
+                                        <li class="info-for-whom__list-item">Автосалоны и дилеры</li>
+                                        <li class="info-for-whom__list-item">IT-компании</li>
+                                    </ul>
+                                </div>
+                                <div class="info-for-whom__item">
+                                    <div class="info-for-whom__title">Физические лица</div>
+                                    <ul class="info-for-whom__list">
+                                        <li class="info-for-whom__list-item">инвесторы</li>
+                                        <li class="info-for-whom__list-item">покупатели недвижимости и автомобилей</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="info-for-whom__graph graph">
+                                <img src="img/for-whom/graph.svg" alt="graph">
+                                <span class="graph__icon graph__icon_left"></span>
+                                <span class="graph__icon graph__icon_right"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="possibilities">
+                <div class="possibilities__container container">
+                    <h2 class="possibilities__title">
+                        Безграничные возможности<br>
+                        для наших клиентов
+                    </h2>
+                    <div class="possibilities__slider">
+                        <div class="possibilities__swiper swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="possibilities__item item-possibilities">
+                                        <h3 class="item-possibilities__title">Компании</h3>
+                                        <ul class="item-possibilities__list">
+                                            <li class="item-possibilities__list-item">Комплексное сопровождение ВЭД</li>
+                                            <li class="item-possibilities__list-item">Работа с цифровыми активами</li>
+                                            <li class="item-possibilities__list-item">Возврат экспортной выручки</li>
+                                            <li class="item-possibilities__list-item">Переводы между счетами клиентов
+                                            </li>
+                                            <li class="item-possibilities__list-item">Оплата инвойсов зарубежных
+                                                поставщиков</li>
+                                        </ul>
+                                        <div class="item-possibilities__bottom">
+                                            <a href="" class="item-possibilities__btn btn btn_medium btn_orange">
+                                                Проконсультироваться
+                                            </a>
+                                            <div class="item-possibilities__image">
+                                                <img src="img/possibilities/01.png" alt="possibilities-img">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="possibilities__item item-possibilities">
+                                        <h3 class="item-possibilities__title">Частные лица</h3>
+                                        <ul class="item-possibilities__list">
+                                            <li class="item-possibilities__list-item">Оплата или аренда недвижимости,
+                                                транспорта</li>
+                                            <li class="item-possibilities__list-item">Оплата обучения</li>
+                                            <li class="item-possibilities__list-item">Закуп товаров для себя</li>
+                                            <li class="item-possibilities__list-item">Переводы за границу
+                                            </li>
+                                            <li class="item-possibilities__list-item">Оплата лечения за рубежом</li>
+                                        </ul>
+                                        <div class="item-possibilities__bottom">
+                                            <a href="" class="item-possibilities__btn btn btn_medium btn_orange">
+                                                Проконсультироваться
+                                            </a>
+                                            <div class="item-possibilities__image">
+                                                <img src="img/possibilities/02.png" alt="possibilities-img">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="possibilities__pagination pagination"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="how-works" id="services">
+                <div class="how-works__container container">
+                    <h2 class="how-works__title">Как это работает</h2>
+                    <div class="how-works__body">
+                        <div class="how-works__items">
+                            <div class="how-works__item item-how-works">
+                                <div class="item-how-works__stage">1 этап</div>
+                                <h3 class="item-how-works__title">Консультация</h3>
+                                <div class="item-how-works__text">
+                                    <div class="item-how-works__text-container">
+                                        <p>
+                                            Обсуждаем задачу онлайн или в офисе в Москве.<br>
+                                            Создаем рабочую группу в удобном мессенджере<br>
+                                            с руководителем, менеджером, юристом,<br>
+                                            специалистом по документации, операционистом<br>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="how-works__item item-how-works">
+                                <div class="item-how-works__stage">2 этап</div>
+                                <h3 class="item-how-works__title">Договор</h3>
+                                <div class="item-how-works__text">
+                                    <div class="item-how-works__text-container">
+                                        <p>
+                                            Предоставляем просчет по конкретному<br>
+                                            инвойсу и шаблоны документов для<br>
+                                            перевода ДС. Заключаем договор и заявку<br>
+                                            на перевод средств в офисе Доверки или<br>
+                                            дистанционно
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="how-works__item item-how-works">
+                                <div class="item-how-works__stage">3 этап</div>
+                                <h3 class="item-how-works__title">Перевод средств</h3>
+                                <div class="item-how-works__text">
+                                    <div class="item-how-works__text-container">
+                                        <p>
+                                            Ждем перевод от клиента на нашу<br>
+                                            нерезидентную компанию со счетом<br>
+                                            в российском банке. Предоставляем<br>
+                                            платежные поручения с отметкой банка<br>
+                                            об исполнении
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="how-works__item item-how-works">
+                                <div class="item-how-works__stage">4 этап</div>
+                                <h3 class="item-how-works__title">Завершение сделки</h3>
+                                <div class="item-how-works__text">
+                                    <div class="item-how-works__text-container">
+                                        <p>
+                                            Отправляем клиенту подтверждение перевода.<br>
+                                            В течение 24 часов клиент получает<br class="desk">
+                                            подтверждение<br class="mob"> от своего поставщика<br class="desk">
+                                            о зачислении средств.<br class="mob"> Подписываем отчет<br class="desk">
+                                            о выполненной работе
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="tariffs">
+                <div class="tariffs__container container">
+                    <h2 class="tariffs__title">
+                        Наши тарифы
+                    </h2>
+                    <div class="tariffs__slider">
+                        <div class="tariffs__swiper swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="tariffs__item item-tariffs item-tariffs_step">
+                                        <div class="item-tariffs__info">
+                                            <h3 class="item-tariffs__title">
+                                                <span>Тариф:</span> Шаг
+                                            </h3>
+                                            <div class="item-tariffs__text">
+                                                Для тех, кто не торопится и готов разумно ждать, но желает
+                                                минимизировать
+                                                расходы на платежи 
+                                            </div>
+                                        </div>
+                                        <div class="item-tariffs__commission">
+                                            <div class="item-tariffs__inner">
+                                                <div class="item-tariffs__icon">
+                                                    <img src="img/tariffs/commission.svg" alt="commission">
+                                                </div>
+                                                <div class="item-tariffs__label">
+                                                    Комиссия доверки
+                                                </div>
+                                                <div class="item-tariffs__value">
+                                                    <span>
+                                                        от 1%
+                                                    </span>
+                                                    <span>
+                                                        + 100 долларов США за свифт
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="item-tariffs__rate">
+                                            <div class="item-tariffs__inner">
+                                                <div class="item-tariffs__icon">
+                                                    <img src="img/tariffs/rate.svg" alt="rate">
+                                                </div>
+                                                <div class="item-tariffs__label">
+                                                    Курс валюты
+                                                </div>
+                                                <div class="item-tariffs__value">
+                                                    <span>
+                                                        ЦБ РФ
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="item-tariffs__term">
+                                            <div class="item-tariffs__inner">
+                                                <div class="item-tariffs__icon">
+                                                    <img src="img/tariffs/term.svg" alt="term">
+                                                </div>
+                                                <div class="item-tariffs__label">
+                                                    Срок платежа
+                                                </div>
+                                                <div class="item-tariffs__value">
+                                                    <span>
+                                                        2 недели
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="tariffs__item item-tariffs item-tariffs_running">
+                                        <div class="item-tariffs__info">
+                                            <h3 class="item-tariffs__title">
+                                                <span>Тариф:</span> Бег
+                                            </h3>
+                                            <div class="item-tariffs__text">
+                                                Для тех, кто выбирает усредненный вариант цена/срок проведения платежа
+                                            </div>
+                                        </div>
+                                        <div class="item-tariffs__commission">
+                                            <div class="item-tariffs__inner">
+                                                <div class="item-tariffs__icon">
+                                                    <img src="img/tariffs/commission.svg" alt="commission">
+                                                </div>
+                                                <div class="item-tariffs__label">
+                                                    Комиссия доверки
+                                                </div>
+                                                <div class="item-tariffs__value">
+                                                    <span>
+                                                        от 2,5%
+                                                    </span>
+                                                    <span>
+                                                        + 100 долларов США за свифт
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="item-tariffs__rate">
+                                            <div class="item-tariffs__inner">
+                                                <div class="item-tariffs__icon">
+                                                    <img src="img/tariffs/rate.svg" alt="rate">
+                                                </div>
+                                                <div class="item-tariffs__label">
+                                                    Курс валюты
+                                                </div>
+                                                <div class="item-tariffs__value">
+                                                    <span>
+                                                        ЦБ РФ
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="item-tariffs__term">
+                                            <div class="item-tariffs__inner">
+                                                <div class="item-tariffs__icon">
+                                                    <img src="img/tariffs/term.svg" alt="term">
+                                                </div>
+                                                <div class="item-tariffs__label">
+                                                    Срок платежа
+                                                </div>
+                                                <div class="item-tariffs__value">
+                                                    <span>
+                                                        5 рабочих дней
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="tariffs__item item-tariffs item-tariffs_flight">
+                                        <div class="item-tariffs__info">
+                                            <h3 class="item-tariffs__title">
+                                                <span>Тариф:</span> Полет
+                                            </h3>
+                                            <div class="item-tariffs__text">
+                                                Для тех, кто считает, что время – это самый главный ресурс и экономит
+                                                деньги за счет супер срочного проведения платежей
+                                            </div>
+                                        </div>
+                                        <div class="item-tariffs__commission">
+                                            <div class="item-tariffs__inner">
+                                                <div class="item-tariffs__icon">
+                                                    <img src="img/tariffs/commission.svg" alt="commission">
+                                                </div>
+                                                <div class="item-tariffs__label">
+                                                    Комиссия доверки
+                                                </div>
+                                                <div class="item-tariffs__value">
+                                                    <span>
+                                                        от 5%
+                                                    </span>
+                                                    <span>
+                                                        + 100 долларов США за свифт
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="item-tariffs__rate">
+                                            <div class="item-tariffs__inner">
+                                                <div class="item-tariffs__icon">
+                                                    <img src="img/tariffs/rate.svg" alt="rate">
+                                                </div>
+                                                <div class="item-tariffs__label">
+                                                    Курс валюты
+                                                </div>
+                                                <div class="item-tariffs__value">
+                                                    <span>
+                                                        ЦБ РФ
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="item-tariffs__term">
+                                            <div class="item-tariffs__inner">
+                                                <div class="item-tariffs__icon">
+                                                    <img src="img/tariffs/term.svg" alt="term">
+                                                </div>
+                                                <div class="item-tariffs__label">
+                                                    Срок платежа
+                                                </div>
+                                                <div class="item-tariffs__value">
+                                                    <span>
+                                                        24 часа
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="tariffs__item item-tariffs item-tariffs_parachute">
+                                        <div class="item-tariffs__info">
+                                            <h3 class="item-tariffs__title">
+                                                <span>Тариф:</span> Парашют
+                                            </h3>
+                                            <div class="item-tariffs__text">
+                                                Для тех, кто считает, что время – это самый главный ресурс и экономит
+                                                деньги за счет супер срочного проведения платежей
+                                            </div>
+                                        </div>
+                                        <div class="item-tariffs__commission">
+                                            <div class="item-tariffs__inner">
+                                                <div class="item-tariffs__icon">
+                                                    <img src="img/tariffs/commission.svg" alt="commission">
+                                                </div>
+                                                <div class="item-tariffs__label">
+                                                    Комиссия доверки
+                                                </div>
+                                                <div class="item-tariffs__value">
+                                                    <span>
+                                                        от 6%
+                                                    </span>
+                                                    <span>
+                                                        + 100 долларов США за свифт
+                                                    </span>
+                                                    <span>
+                                                        +30 000 руб. комиссия российского банка за эскроу счет
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="item-tariffs__rate">
+                                            <div class="item-tariffs__inner">
+                                                <div class="item-tariffs__icon">
+                                                    <img src="img/tariffs/rate.svg" alt="rate">
+                                                </div>
+                                                <div class="item-tariffs__label">
+                                                    Курс валюты
+                                                </div>
+                                                <div class="item-tariffs__value">
+                                                    <span>
+                                                        ЦБ РФ
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="item-tariffs__term">
+                                            <div class="item-tariffs__inner">
+                                                <div class="item-tariffs__icon">
+                                                    <img src="img/tariffs/term.svg" alt="term">
+                                                </div>
+                                                <div class="item-tariffs__label">
+                                                    Срок платежа
+                                                </div>
+                                                <div class="item-tariffs__value">
+                                                    <span>
+                                                        24 часа
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tariffs__pagination pagination"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="cost" id="cost">
+                <div class="cost__video">
+                    <video autoplay="" muted="" loop="" playsinline="">
+                        <source src="img/video.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="cost__body">
+                    <div class="cost__container container">
+                        <h2 class="cost__title">
+                            Рассчитайте стоимость<br>
+                            международного перевода
+                        </h2>
+                        <div class="cost__calculator calculator">
+                            <form action="#" class="calculator__form">
+                                <div class="calculator__body">
+                                    <div class="calculator__item item-calculator">
+                                        <div class="item-calculator__title">Тарифы</div>
+                                        <div class="item-calculator__body">
+                                            <div class="item-calculator__options options options-tariffs">
+                                                <div class="options-tariffs__swiper options__swiper swiper">
+                                                    <div class="swiper-wrapper">
+                                                        <div class="swiper-slide">
+                                                            <div class="options__item">
+                                                                <input id="formTariffsStep" checked autocomplete='off'
+                                                                    type='radio' value="step" name='tariffs'
+                                                                    class='options__input'>
+                                                                <label for="formTariffsStep"
+                                                                    class="options__label">Шаг</label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="swiper-slide">
+                                                            <div class="options__item">
+                                                                <input id="formTariffsRunning" autocomplete='off'
+                                                                    type='radio' value="running" name='tariffs'
+                                                                    class='options__input'>
+                                                                <label for="formTariffsRunning"
+                                                                    class="options__label">Бег</label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="swiper-slide">
+                                                            <div class="options__item">
+                                                                <input id="formTariffsFlight" autocomplete='off'
+                                                                    type='radio' value="flight" name='tariffs'
+                                                                    class='options__input'>
+                                                                <label for="formTariffsFlight"
+                                                                    class="options__label">Полёт</label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="swiper-slide">
+                                                            <div class="options__item">
+                                                                <input id="formTariffsParachute" autocomplete='off'
+                                                                    type='radio' value="parachute" name='tariffs'
+                                                                    class='options__input'>
+                                                                <label for="formTariffsParachute"
+                                                                    class="options__label">Парашют</label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="item-calculator__info info-item-calculator">
+                                            <div class="info-item-calculator__item">
+                                                <div class="info-item-calculator__label">Комиссия:</div>
+                                                <div class="info-item-calculator__value">от 1%</div>
+                                            </div>
+                                            <div class="info-item-calculator__item">
+                                                <div class="info-item-calculator__label">Срок:</div>
+                                                <div class="info-item-calculator__value">2 недели</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="calculator__item item-calculator">
+                                        <div class="item-calculator__title">Валюта платежа</div>
+                                        <div class="item-calculator__body">
+                                            <div class="item-calculator__options options options-valuta">
+                                                <div class="options-valuta__swiper options__swiper swiper">
+                                                    <div class="swiper-wrapper">
+                                                        <div class="swiper-slide">
+                                                            <div class="options__item">
+                                                                <input id="formValutaDollars" checked autocomplete='off'
+                                                                    type='radio' value="dollars" name='valuta'
+                                                                    class='options__input'>
+                                                                <label for="formValutaDollars" class="options__label">
+                                                                    <span>
+                                                                        <svg>
+                                                                            <use xlink:href="#dollar"></use>
+                                                                        </svg>
+                                                                    </span>
+                                                                    Доллары
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="swiper-slide">
+                                                            <div class="options__item">
+                                                                <input id="formValutaEuro" autocomplete='off'
+                                                                    type='radio' value="euro" name='valuta'
+                                                                    class='options__input'>
+                                                                <label for="formValutaEuro" class="options__label">
+                                                                    <span>
+                                                                        <svg>
+                                                                            <use xlink:href="#euro"></use>
+                                                                        </svg>
+                                                                    </span>
+                                                                    Евро
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="swiper-slide">
+                                                            <div class="options__item">
+                                                                <input id="formValutaYuan" autocomplete='off'
+                                                                    type='radio' value="yuan" name='valuta'
+                                                                    class='options__input'>
+                                                                <label for="formValutaYuan" class="options__label">
+                                                                    <span>
+                                                                        <svg>
+                                                                            <use xlink:href="#yuan"></use>
+                                                                        </svg>
+                                                                    </span>
+                                                                    Юани
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="calculator__item item-calculator">
+                                        <div class="item-calculator__title">Страна отправителя</div>
+                                        <div class="item-calculator__body">
+                                            <div class="item-calculator__dropdown dropdown">
+                                                <button class="dropdown__btn">
+                                                    Россия
+                                                </button>
+                                                <ul class="dropdown__list">
+                                                    <li class="dropdown__list-item" data-dropdown="Россия">Россия</li>
+                                                    <li class="dropdown__list-item" data-dropdown="Россия">Россия 2</li>
+                                                    <li class="dropdown__list-item" data-dropdown="Россия">Россия 3</li>
+                                                    <li class="dropdown__list-item" data-dropdown="Россия">Россия 4</li>
+                                                    <li class="dropdown__list-item" data-dropdown="Россия">Россия 5</li>
+                                                </ul>
+                                                <input type='text' name='age' value='Россия'
+                                                    class='dropdown__input-hidden'>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="calculator__item item-calculator">
+                                        <div class="item-calculator__title">Страна получателя</div>
+                                        <div class="item-calculator__body">
+                                            <div class="item-calculator__dropdown dropdown">
+                                                <button class="dropdown__btn">
+                                                    Китай
+                                                </button>
+                                                <ul class="dropdown__list">
+                                                    <li class="dropdown__list-item" data-dropdown="Китай">Китай</li>
+                                                    <li class="dropdown__list-item" data-dropdown="Китай">Китай 2</li>
+                                                    <li class="dropdown__list-item" data-dropdown="Китай">Китай 3</li>
+                                                    <li class="dropdown__list-item" data-dropdown="Китай">Китай 4</li>
+                                                    <li class="dropdown__list-item" data-dropdown="Китай">Китай 5</li>
+                                                </ul>
+                                                <input type='text' name='age' value='Китай'
+                                                    class='dropdown__input-hidden'>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="calculator__item item-calculator">
+                                        <div class="item-calculator__title">Страна перевода</div>
+                                        <div class="item-calculator__body">
+                                            <div class="item-calculator__dropdown dropdown">
+                                                <button class="dropdown__btn">
+                                                    20 000
+                                                </button>
+                                                <ul class="dropdown__list">
+                                                    <li class="dropdown__list-item" data-dropdown="20 000">20 000</li>
+                                                    <li class="dropdown__list-item" data-dropdown="30 000">30 000</li>
+                                                    <li class="dropdown__list-item" data-dropdown="40 000">40 000</li>
+                                                    <li class="dropdown__list-item" data-dropdown="50 000">50 000</li>
+                                                    <li class="dropdown__list-item" data-dropdown="60 000">60 000</li>
+                                                </ul>
+                                                <input type='text' name='age' value='20 000'
+                                                    class='dropdown__input-hidden'>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="calculator__calculation calculation">
+                                    <div class="calculation__body">
+                                        <h3 class="calculation__title">Расчет</h3>
+                                        <div class="calculation__items">
+                                            <div class="calculation__item item-calculation">
+                                                <div class="item-calculation__label">Комиссия платежного агента</div>
+                                                <div class="item-calculation__value">0,00₽</div>
+                                            </div>
+                                            <div class="calculation__item item-calculation">
+                                                <div class="item-calculation__label">Основной платёж</div>
+                                                <div class="item-calculation__value">0,00₽</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="calculation__bottom">
+                                        <div class="calculation__total total-calculation">
+                                            <div class="total-calculation__label">Итого</div>
+                                            <div class="total-calculation__value">0,00₽</div>
+                                        </div>
+                                        <button type='submit'
+                                            class='calculation__btn btn btn_small btn_white'>Оплатить</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <a href="" class="cost__example">
+                            Пример расчета
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <section class="advantages">
+                <div class="advantages__container container">
+                    <h2 class="advantages__title">Преимущества Доверка</h2>
+                    <div class="advantages__slider">
+                        <div class="advantages__swiper swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="advantages__item item-advantages item-advantages_doverka">
+                                        <div class="item-advantages__top">
+                                            <div class="item-advantages__logo">
+                                                <img src="img/logo-white.svg" alt="logo">
+                                            </div>
+                                        </div>
+                                        <div class="item-advantages__body">
+                                            <div class="item-advantages__element">
+                                                <div class="item-advantages__label">Комиссия</div>
+                                                <div class="item-advantages__value">
+                                                    От 1% (по тарифу)<br>
+                                                    + $100 за платёжное поручение
+                                                </div>
+                                            </div>
+                                            <div class="item-advantages__element">
+                                                <div class="item-advantages__label">Курс валюты</div>
+                                                <div class="item-advantages__value">
+                                                    По курсу ЦБ РФ,<br>
+                                                    без скрытых наценок
+                                                </div>
+                                            </div>
+                                            <div class="item-advantages__element">
+                                                <div class="item-advantages__label">Сроки платежа</div>
+                                                <div class="item-advantages__value">
+                                                    От 24 часов, прогнозируемые сроки
+                                                </div>
+                                            </div>
+                                            <div class="item-advantages__element">
+                                                <div class="item-advantages__label">Безопасность</div>
+                                                <div class="item-advantages__value">
+                                                    Договор, гарантии, собственная платёжная инфраструктура
+                                                </div>
+                                            </div>
+                                            <div class="item-advantages__element">
+                                                <div class="item-advantages__label">Комфорт</div>
+                                                <div class="item-advantages__value">
+                                                    Персональный менеджер, поддержка 24/7 в Telegram
+                                                </div>
+                                            </div>
+                                            <div class="item-advantages__element">
+                                                <div class="item-advantages__label">Документооборот</div>
+                                                <div class="item-advantages__value">
+                                                    Готовим документы, юристы ВЭД в штате
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="advantages__item item-advantages">
+                                        <div class="item-advantages__top">
+                                            <h3 class="item-advantages__title">Банки</h3>
+                                        </div>
+                                        <div class="item-advantages__body">
+                                            <div class="item-advantages__element">
+                                                <div class="item-advantages__label">Комиссия</div>
+                                                <div class="item-advantages__value">
+                                                    От 3%, скрытые комиссии,<br>
+                                                    дополнительные сборы
+                                                </div>
+                                            </div>
+                                            <div class="item-advantages__element">
+                                                <div class="item-advantages__label">Курс валюты</div>
+                                                <div class="item-advantages__value">
+                                                    Завышенный банковский курс<br>
+                                                    (разница 3–5%)
+                                                </div>
+                                            </div>
+                                            <div class="item-advantages__element">
+                                                <div class="item-advantages__label">Сроки платежа</div>
+                                                <div class="item-advantages__value">
+                                                    От 5 дней до нескольких недель
+                                                </div>
+                                            </div>
+                                            <div class="item-advantages__element">
+                                                <div class="item-advantages__label">Безопасность</div>
+                                                <div class="item-advantages__value">
+                                                    Банковские проверки, возможные блокировки
+                                                </div>
+                                            </div>
+                                            <div class="item-advantages__element">
+                                                <div class="item-advantages__label">Комфорт</div>
+                                                <div class="item-advantages__value">
+                                                    Только email<br>
+                                                    и городские телефоны
+                                                </div>
+                                            </div>
+                                            <div class="item-advantages__element">
+                                                <div class="item-advantages__label">Документооборот</div>
+                                                <div class="item-advantages__value">
+                                                    Требуются дополнительные подтверждения
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="advantages__item item-advantages">
+                                        <div class="item-advantages__top">
+                                            <h3 class="item-advantages__title">Прочие сервисы</h3>
+                                        </div>
+                                        <div class="item-advantages__body">
+                                            <div class="item-advantages__element">
+                                                <div class="item-advantages__label">Комиссия</div>
+                                                <div class="item-advantages__value">
+                                                    От 5%,<br>
+                                                    непрозрачные комиссии
+                                                </div>
+                                            </div>
+                                            <div class="item-advantages__element">
+                                                <div class="item-advantages__label">Курс валюты</div>
+                                                <div class="item-advantages__value">
+                                                    Курс формируется<br>
+                                                    спекулятивно
+                                                </div>
+                                            </div>
+                                            <div class="item-advantages__element">
+                                                <div class="item-advantages__label">Сроки платежа</div>
+                                                <div class="item-advantages__value">
+                                                    От 5 дней, возможны заморозки
+                                                </div>
+                                            </div>
+                                            <div class="item-advantages__element">
+                                                <div class="item-advantages__label">Безопасность</div>
+                                                <div class="item-advantages__value">
+                                                    Высокий риск<br>
+                                                    потери средств
+                                                </div>
+                                            </div>
+                                            <div class="item-advantages__element">
+                                                <div class="item-advantages__label">Комфорт</div>
+                                                <div class="item-advantages__value">
+                                                    Ограниченная поддержка
+                                                    <br>
+                                                    <br>
+                                                </div>
+                                            </div>
+                                            <div class="item-advantages__element">
+                                                <div class="item-advantages__label">Документооборот</div>
+                                                <div class="item-advantages__value">
+                                                    Долгие сроки, проблемы с комплаенсом
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="advantages__pagination pagination"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="reviews">
+                <div class="reviews__top top-reviews">
+                    <div class="top-reviews__container container">
+                        <h2 class="top-reviews__title">Нам доверяют</h2>
+                    </div>
+                </div>
+                <div class="reviews__logo logo-reviews">
+                    <div class="logo-reviews__container container">
+                        <div class="logo-reviews__row">
+                            <div class="logo-reviews__column">
+                                <div class="logo-reviews__item">
+                                    <img src="img/reviews/logo/01.png" alt="reviews-logo">
+                                </div>
+                            </div>
+                            <div class="logo-reviews__column">
+                                <div class="logo-reviews__item">
+                                    <img src="img/reviews/logo/02.png" alt="reviews-logo">
+                                </div>
+                            </div>
+                            <div class="logo-reviews__column">
+                                <div class="logo-reviews__item">
+                                    <img src="img/reviews/logo/03.png" alt="reviews-logo">
+                                </div>
+                            </div>
+                            <div class="logo-reviews__column">
+                                <div class="logo-reviews__item">
+                                    <img src="img/reviews/logo/04.png" alt="reviews-logo">
+                                </div>
+                            </div>
+                            <div class="logo-reviews__column">
+                                <div class="logo-reviews__item">
+                                    <img src="img/reviews/logo/05.png" alt="reviews-logo">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="reviews__body">
+                    <div class="reviews__container container">
+                        <div class="reviews__slider">
+                            <div class="reviews__swiper swiper">
+                                <div class="reviews__navigation navigation">
+                                    <div class="navigation__btn navigation__btn_prev reviews__btn_prev">
+                                        <svg>
+                                            <use xlink:href="#arrow"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="navigation__btn navigation__btn_next reviews__btn_next">
+                                        <svg>
+                                            <use xlink:href="#arrow"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="reviews__item item-reviews">
+                                            <div class="item-reviews__top">
+                                                <div class="item-reviews__img">
+                                                    <span>
+                                                        <svg>
+                                                            <use xlink:href="#user"></use>
+                                                        </svg>
+                                                    </span>
+                                                </div>
+                                                <div class="item-reviews__info">
+                                                    <div class="item-reviews__name">Максим П.</div>
+                                                    <div class="item-reviews__profession">Частный инвестор</div>
+                                                </div>
+                                            </div>
+                                            <div class="item-reviews__text">
+                                                <p>
+                                                    Решил перевести крупную сумму за границу, но боялся блокировок и
+                                                    лишних
+                                                    проверок. В Доверке разъяснили все детали, подобрали оптимальный
+                                                    маршрут
+                                                    и обеспечили прозрачность перевода. Всё прошло идеально! Теперь
+                                                    знаю, к
+                                                    кому обращаться.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="reviews__item item-reviews">
+                                            <div class="item-reviews__top">
+                                                <div class="item-reviews__img">
+                                                    <span>
+                                                        <svg>
+                                                            <use xlink:href="#user"></use>
+                                                        </svg>
+                                                    </span>
+                                                </div>
+                                                <div class="item-reviews__info">
+                                                    <div class="item-reviews__name">Наталья С.</div>
+                                                    <div class="item-reviews__profession">Импортёр одежды</div>
+                                                </div>
+                                            </div>
+                                            <div class="item-reviews__text">
+                                                <p>
+                                                    Наш европейский поставщик потребовал предоплату, а банк вдруг
+                                                    отказался проводить платеж. Доверка помогла перевести деньги быстро
+                                                    и без потерь на курсе. Бизнес продолжает работать, партнёр доволен,
+                                                    а мы сэкономили время и нервы. Спасибо!
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="reviews__item item-reviews">
+                                            <div class="item-reviews__top">
+                                                <div class="item-reviews__img">
+                                                    <span>
+                                                        <svg>
+                                                            <use xlink:href="#user"></use>
+                                                        </svg>
+                                                    </span>
+                                                </div>
+                                                <div class="item-reviews__info">
+                                                    <div class="item-reviews__name">Олег Т.</div>
+                                                    <div class="item-reviews__profession">Логистика</div>
+                                                </div>
+                                            </div>
+                                            <div class="item-reviews__text">
+                                                <p>
+                                                    Нужно было срочно оплатить груз, но банк заморозил перевод на
+                                                    проверку. Доверка оформила транзакцию за пару часов, и наш контейнер
+                                                    ушёл в срок. Рекомендую тем, кому важна скорость и надёжность!
+
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="reviews__item item-reviews">
+                                            <div class="item-reviews__top">
+                                                <div class="item-reviews__img">
+                                                    <span>
+                                                        <svg>
+                                                            <use xlink:href="#user"></use>
+                                                        </svg>
+                                                    </span>
+                                                </div>
+                                                <div class="item-reviews__info">
+                                                    <div class="item-reviews__name">Мария К.</div>
+                                                    <div class="item-reviews__profession">Предприниматель</div>
+                                                </div>
+                                            </div>
+                                            <div class="item-reviews__text">
+                                                <p>
+                                                    Доверка – это не просто финансовый сервис, это реальная поддержка
+                                                    бизнеса. Здесь понимают проблемы клиентов и помогают их решать, а не
+                                                    просто проводят платежи. Уже несколько раз выручили с международными
+                                                    расчётами. Теперь сотрудничаем на постоянной основе.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="reviews__item item-reviews">
+                                            <div class="item-reviews__top">
+                                                <div class="item-reviews__img">
+                                                    <span>
+                                                        <svg>
+                                                            <use xlink:href="#user"></use>
+                                                        </svg>
+                                                    </span>
+                                                </div>
+                                                <div class="item-reviews__info">
+                                                    <div class="item-reviews__name">Мария К.</div>
+                                                    <div class="item-reviews__profession">Предприниматель</div>
+                                                </div>
+                                            </div>
+                                            <div class="item-reviews__text">
+                                                <p>
+                                                    Доверка – это не просто финансовый сервис, это реальная поддержка
+                                                    бизнеса. Здесь понимают проблемы клиентов и помогают их решать, а не
+                                                    просто проводят платежи. Уже несколько раз выручили с международными
+                                                    расчётами. Теперь сотрудничаем на постоянной основе.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="reviews__pagination pagination"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="cases" id="cases">
+                <div class="cases__container container">
+                    <div class="cases__subtitle">
+                        Валютное законодательство самое строгое, но
+                    </div>
+                    <h2 class="cases__title">
+                        мы успешно закрыли<br>
+                        10000+ сделок
+                    </h2>
+                    <div class="cases__slider">
+                        <div class="cases__swiper swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide swiper-slide_big">
+                                    <div class="cases__item item-cases">
+                                        <div class="item-cases__body">
+                                            <h3 class="item-cases__title">
+                                                Купили авто в США?<br>
+                                                Мы поможем оплатить<br>
+                                                быстро и без стресса!
+                                            </h3>
+                                            <a href="" class="item-cases__btn btn btn_medium btn_grey">Смотреть кейс</a>
+                                        </div>
+                                        <div class="item-cases__image">
+                                            <img src="img/cases/01.png" alt="cases-img">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="cases__item item-cases">
+                                        <div class="item-cases__image">
+                                            <img src="img/cases/02.png" alt="cases-img">
+                                        </div>
+                                        <div class="item-cases__body">
+                                            <h3 class="item-cases__title">
+                                                Переведём деньги<br>
+                                                поставщику в Китае<br>
+                                                за 24 часа — без волнений!
+                                            </h3>
+                                            <a href="" class="item-cases__btn btn btn_medium btn_grey">Смотреть кейс</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="cases__item item-cases">
+                                        <div class="item-cases__image">
+                                            <img src="img/cases/03.png" alt="cases-img">
+                                        </div>
+                                        <div class="item-cases__body">
+                                            <h3 class="item-cases__title">
+                                                Контейнер с товаром<br>
+                                                застрял – что делать?
+                                            </h3>
+                                            <a href="" class="item-cases__btn btn btn_medium btn_grey">Смотреть кейс</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="cases__item item-cases">
+                                        <div class="item-cases__image">
+                                            <img src="img/cases/04.png" alt="cases-img">
+                                        </div>
+                                        <div class="item-cases__body">
+                                            <h3 class="item-cases__title">
+                                                Криптовалюта есть,<br>
+                                                а поставщик принимает<br>
+                                                только евро? Решаем!
+                                            </h3>
+                                            <a href="" class="item-cases__btn btn btn_medium btn_grey">Смотреть кейс</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cases__pagination pagination"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <section class="faqs" id="faq">
+                <div class="faqs__container container">
+                    <h2 class="faqs__titile">
+                        Отвечаем на часто<br>
+                        задаваемые вопросы
+                    </h2>
+                    <div class="faqs__body">
+                        <div class="faqs__item item-faqs">
+                            <div class="item-faqs__top">
+                                <span class="item-faqs__number">01</span>
+                                <h3 class="item-faqs__title">Сколько по времени занимает платеж?</h3>
+                                <span class="item-faqs__arrow">
+                                    <svg>
+                                        <use xlink:href="#arrow"></use>
+                                    </svg>
+                                </span>
+                            </div>
+                            <div class="item-faqs__body">
+                                <div class="item-faqs__text">
+                                    <p>
+                                        В основном — 24 часа, кроме праздников и выходных. Такой минимальный срок
+                                        возможен благодаря тому, что мы платим средствами компании и не ждем, пока нам
+                                        дойдет перевод клиента
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="faqs__item item-faqs">
+                            <div class="item-faqs__top">
+                                <span class="item-faqs__number">02</span>
+                                <h3 class="item-faqs__title">
+                                    Как я узнаю, что платеж ушел? Есть ли какое-<br>
+                                    то подтверждение оплаты инвойса?
+                                </h3>
+                                <span class="item-faqs__arrow">
+                                    <svg>
+                                        <use xlink:href="#arrow"></use>
+                                    </svg>
+                                </span>
+                            </div>
+                            <div class="item-faqs__body">
+                                <div class="item-faqs__text">
+                                    <p>
+                                        Как только платеж будет отправлен, вы получите ПП<br> (платежное поручение) с
+                                        отметкой банка «Исполнено»<br> в течение суток
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="faqs__item item-faqs">
+                            <div class="item-faqs__top">
+                                <span class="item-faqs__number">03</span>
+                                <h3 class="item-faqs__title">
+                                    Может ли наш поставщик отклонить ваш платеж?
+                                </h3>
+                                <span class="item-faqs__arrow">
+                                    <svg>
+                                        <use xlink:href="#arrow"></use>
+                                    </svg>
+                                </span>
+                            </div>
+                            <div class="item-faqs__body">
+                                <div class="item-faqs__text">
+                                    <p>
+                                        У нас есть собственный отдел комплаенса. До проведения платежа мы проводим
+                                        комплаенс документов с одной и другой стороны. Клиент может показать документ и
+                                        получить подтверждение. Если поставщик не согласовывает его, мы находим другое
+                                        юрлицо или возвращаем средства клиенту
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="faqs__item item-faqs">
+                            <div class="item-faqs__top">
+                                <span class="item-faqs__number">04</span>
+                                <h3 class="item-faqs__title">
+                                    Какой договор вы используете для оплаты?
+                                </h3>
+                                <span class="item-faqs__arrow">
+                                    <svg>
+                                        <use xlink:href="#arrow"></use>
+                                    </svg>
+                                </span>
+                            </div>
+                            <div class="item-faqs__body">
+                                <div class="item-faqs__text">
+                                    <p>
+                                        В основном мы используем агентский договор. Но наличие юристов<br> в штабе дает
+                                        возможность проводить юридическое сопровождение<br> сделки в любой форме
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="faqs__item item-faqs">
+                            <div class="item-faqs__top">
+                                <span class="item-faqs__number">05</span>
+                                <h3 class="item-faqs__title">С какими валютами вы работаете?</h3>
+                                <span class="item-faqs__arrow">
+                                    <svg>
+                                        <use xlink:href="#arrow"></use>
+                                    </svg>
+                                </span>
+                            </div>
+                            <div class="item-faqs__body">
+                                <div class="item-faqs__text">
+                                    <p>
+                                        Мы работаем со всеми твердыми валютами под запрос.<br> Базово ведем работу с
+                                        евро,
+                                        долларом и юанями
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="" class="faqs__more">Посмотреть ещё</a>
+                </div>
+            </section>
+            <section class="request">
+                <div class="request__image">
+                    <img src="img/circles.svg" alt="circles">
+                </div>
+                <div class="request__body">
+                    <div class="request__container container">
+                        <div class="request__content">
+                            <h2 class="request__title">
+                                Хотите перевести деньги<br>
+                                быстро и безопасно?
+                            </h2>
+                            <div class="request__text">
+                                <p>
+                                    Свяжитесь с нами и мы предложим лучший вариант.
+                                </p>
+                            </div>
+                            <a href="" class="request__btn btn btn_big btn_orange">Оставить заявку</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer" id="contacts">
+    <div class="footer__container container">
+        <div class="footer__row">
+            <div class="footer__column footer__column_phones">
+                <div class="footer__item">
+                    <div class="footer__title">Номер телефона</div>
+                    <div class="footer__phones">
+                        <a href="tel:88003007565" class="footer__link">8 (800) 300-75-65</a>
+                        <a href="tel:89770908000" class="footer__link">8 (977) 090-80-00</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__column footer__column_client-office">
+                <div class="footer__title">Клиентский офис</div>
+                <div class="footer__address">
+                    Москва, ул. Большая Филевская,<br>
+                    дом 3 корп. 2
+                </div>
+            </div>
+            <div class="footer__column footer__column_mail">
+                <div class="footer__title">Почта</div>
+                <a href="mailto:info@doverka.com" class="footer__link">info@doverka.com</a>
+            </div>
+            <div class="footer__column footer__column_back-office">
+                <div class="footer__title">Бэк-офис</div>
+                <div class="footer__address">
+                    Россия, 420500, респ. Татарстан, г. Иннополис,<br>
+                    ул. Университетская, д. 7, пом. 503
+                </div>
+            </div>
+            <div class="footer__column footer__column_back-copyright">
+                <div class="footer__logo">
+                    <img src="img/footer-logo.svg" alt="logo">
+                </div>
+                <div class="footer__copyright">© 2025. Все права защищены</div>
+            </div>
+            <div class="footer__column footer__column_privacy-policy">
+                <a href="" class="footer__privacy-policy">Политика конфиденциальности</a>
+            </div>
+        </div>
+    </div>
+</footer>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/app.min.js"></script>
+</body>
+
+</html>
