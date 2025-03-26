@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css" />
     <title>Доверка</title>
 </head>
 
@@ -56,6 +57,91 @@
     </symbol>
 </svg>
     <div class="wrapper">
+        <div class="popup popup_consultation">
+            <div class="popup__body">
+                <button type="button" class="popup__close">
+                    <svg role="presentation" width="23px" height="23px" viewBox="0 0 23 23" version="1.1"
+                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <g stroke="none" stroke-width="1" fill="#ffffff" fill-rule="evenodd">
+                            <rect
+                                transform="translate(11.313708, 11.313708) rotate(-45.000000) translate(-11.313708, -11.313708) "
+                                x="10.3137085" y="-3.6862915" width="2" height="30"></rect>
+                            <rect
+                                transform="translate(11.313708, 11.313708) rotate(-315.000000) translate(-11.313708, -11.313708) "
+                                x="10.3137085" y="-3.6862915" width="2" height="30"></rect>
+                        </g>
+                    </svg>
+                </button>
+                <div class="popup__content">
+                    <h3 class="popup__title">
+                        Получите консультацию
+                        по услугам Доверки
+                    </h3>
+                    <div class="popup__subtitle">
+                        Заполните форму, менеджер свяжеться с вами
+                        для обсуждения
+                    </div>
+                    <form action="#" class="popup__form form-popup">
+                        <div class="form-popup__item">
+                            <input placeholder="Ваше имя*" autocomplete='off' type='text' name='form[]'
+                                class='form-popup__input input required'>
+                        </div>
+                        <div class="form-popup__item">
+                            <input placeholder="Ваш e-mail*" autocomplete='off' type='email' name='form[]'
+                                class='form-popup__input input required'>
+                        </div>
+                        <div class="form-popup__item form-item__phone">
+                            <input placeholder="" autocomplete='off' type='tel' name='form[]'
+                                class='form-popup__input phone required'>
+                        </div>
+                        <div class="form-popup__item">
+                            <div class="dropdown dropdown_input">
+                                <button class="dropdown__btn input">
+                                    Предпочтительный канал сайта*
+                                </button>
+                                <div class="dropdown__body">
+                                    <ul class="dropdown__list">
+                                        <li class="dropdown__list-item" data-dropdown="Значение 1">Значение 1
+                                        </li>
+                                        <li class="dropdown__list-item" data-dropdown="Значение 2">Значение 2
+                                        </li>
+                                        <li class="dropdown__list-item" data-dropdown="Значение 3">Значение 3
+                                        </li>
+                                        <li class="dropdown__list-item" data-dropdown="Значение 4">Значение 4
+                                        </li>
+                                        <li class="dropdown__list-item" data-dropdown="Значение 5">Значение 5
+                                        </li>
+                                    </ul>
+                                </div>
+                                <input type='text' name='age' value='' class='dropdown__input-hidden required'>
+                            </div>
+                        </div>
+                        <div class="form-popup__item">
+                            <input placeholder="Ваш комментарий" autocomplete='off' type='text' name='form[]'
+                                class='form-popup__input input'>
+                        </div>
+                        <div class="form-popup__item">
+                            <div class="form-popup__checkbox checkbox">
+                                <div class="checkbox__item">
+                                    <input id="formPrivacyPolicy" checked type='checkbox' name='form[]'
+                                        class='checkbox__input required'>
+                                    <label for="formPrivacyPolicy" class="checkbox__label">
+                                        Я соглашаюсь <a href="">с политикой конфиденциальности</a>
+                                    </label>
+                                </div>
+                                <div class="checkbox__item">
+                                    <input id="formAdvertising" type='checkbox' name='form[]' class='checkbox__input'>
+                                    <label for="formAdvertising" class="checkbox__label">
+                                        Я соглашаюсь <a href="">с получением рекламных материалов</a>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <button type='submit' class='form-popup__btn btn btn_small btn_orange'>Оставить заявку</button>
+                    </form>
+                </div>
+            </div>
+        </div>
         <header class="header">
     <div class="header__main">
         <div class="header__container">
@@ -83,9 +169,13 @@
                     </ul>
                 </nav>
                 <div class="header__actions">
-                    <a href="tel:880077577 75" class="header__tel" data-da="mobile-header__body, 2, 1299.98">8 800 775
-                        77 75</a>
-                    <a href="" class="header__btn btn btn_white btn_small" data-da="mobile-header__body, 1, 1299.98">
+                    <div class="header__phones" data-da="mobile-header__body, 2, 1299.98">
+                        <a href="tel:88003007565" class="header__tel">8 800
+                            300 75 65</a>
+                        <a href="tel:89770908000" class="header__tel">8 977 090 80 00</a>
+                    </div>
+                    <a href="" class="header__btn btn btn_white btn_small consultation-open"
+                        data-da="mobile-header__body, 1, 1299.98">
                         Проконсультироваться
                         <span>
                             <svg>
@@ -127,7 +217,7 @@
                 </li>
             </ul>
         </nav>
-        <a href="" class="fixed-header__btn btn btn_orange btn_small">
+        <a href="" class="fixed-header__btn btn btn_orange btn_small consultation-open">
             Проконсультироваться
             <span>
                 <svg>
@@ -148,11 +238,12 @@
                         <div class="fullscreen__subtitle">
                             <p>
                                 Проводим международные платежи<br>
-                                безрисков, по курсу ЦБ РФ и с минимальными комиссиями
+                                без рисков, по курсу ЦБ РФ и с минимальными комиссиями
                             </p>
                         </div>
                         <div class="fullscreen__btns">
-                            <a href="" class="fullscreen__btn btn btn_big btn_orange">Оставить заявку</a>
+                            <a href="" class="fullscreen__btn btn btn_big btn_orange consultation-open">Оставить
+                                заявку</a>
                             <a href="" class="fullscreen__btn btn btn_big btn_border link-scroll"
                                 data-scroll="cost">Рассчитать платеж</a>
                         </div>
@@ -185,7 +276,7 @@
                         <div class="fullscreen__resident resident-fullscreen">
                             <div class="resident-fullscreen__text">
                                 Резидент<br>
-                                иннополиса
+                                Иннополиса
                             </div>
                             <div class="resident-fullscreen__logo">
                                 <img src="img/fullscreen/resident-logo.svg" alt="resident-logo">
@@ -225,8 +316,8 @@
                                     <img src="img/services/03.svg" alt="services-icon">
                                 </div>
                                 <div class="services__text">
-                                    Обмен<br>
-                                    по курсу ЦБ РФ
+                                    Платежи<br>
+                                    без рисков
                                 </div>
                             </div>
                         </div>
@@ -456,7 +547,7 @@
                                     </p>
                                 </div>
                             </div>
-                            <a href="" class="for-whom__btn btn btn_white btn_medium"
+                            <a href="" class="for-whom__btn btn btn_white btn_medium consultation-open"
                                 data-da="info-for-whom__graph, 1, 1400.98">Стать клиентом</a>
                         </div>
                         <div class="for-whom__info info-for-whom">
@@ -480,9 +571,10 @@
                                 </div>
                             </div>
                             <div class="info-for-whom__graph graph">
-                                <img src="img/for-whom/graph.svg" alt="graph">
+                                <img class="graph__img" src="img/for-whom/graph.svg" alt="graph">
                                 <span class="graph__icon graph__icon_left"></span>
                                 <span class="graph__icon graph__icon_right"></span>
+                                <img class="info-for-whom__img" src="img/for-whom/01.png" alt="for-whom-img">
                             </div>
                         </div>
                     </div>
@@ -510,7 +602,8 @@
                                                 поставщиков</li>
                                         </ul>
                                         <div class="item-possibilities__bottom">
-                                            <a href="" class="item-possibilities__btn btn btn_medium btn_orange">
+                                            <a href=""
+                                                class="item-possibilities__btn btn btn_medium btn_orange consultation-open">
                                                 Проконсультироваться
                                             </a>
                                             <div class="item-possibilities__image">
@@ -532,7 +625,8 @@
                                             <li class="item-possibilities__list-item">Оплата лечения за рубежом</li>
                                         </ul>
                                         <div class="item-possibilities__bottom">
-                                            <a href="" class="item-possibilities__btn btn btn_medium btn_orange">
+                                            <a href=""
+                                                class="item-possibilities__btn btn btn_medium btn_orange consultation-open">
                                                 Проконсультироваться
                                             </a>
                                             <div class="item-possibilities__image">
@@ -551,63 +645,68 @@
                 <div class="how-works__container container">
                     <h2 class="how-works__title">Как это работает</h2>
                     <div class="how-works__body">
-                        <div class="how-works__items">
-                            <div class="how-works__item item-how-works">
-                                <div class="item-how-works__stage">1 этап</div>
-                                <h3 class="item-how-works__title">Консультация</h3>
-                                <div class="item-how-works__text">
-                                    <div class="item-how-works__text-container">
-                                        <p>
-                                            Обсуждаем задачу онлайн или в офисе в Москве.<br>
-                                            Создаем рабочую группу в удобном мессенджере<br>
-                                            с руководителем, менеджером, юристом,<br>
-                                            специалистом по документации, операционистом<br>
-                                        </p>
+                        <div class="how-works__inner">
+                            <div class="how-works__items">
+                                <div class="how-works__item item-how-works">
+                                    <div class="item-how-works__stage">1 этап</div>
+                                    <h3 class="item-how-works__title">Консультация</h3>
+                                    <div class="item-how-works__text">
+                                        <div class="item-how-works__text-container">
+                                            <p>
+                                                Обсуждаем задачу онлайн или в офисе<br class="mob"> в Москве.<br
+                                                    class="desk">
+                                                Создаем рабочую группу<br class="mob"> в удобном мессенджере<br
+                                                    class="desk">
+                                                с руководителем,<br class="mob"> менеджером, юристом,<br class="desk">
+                                                специалистом<br class="mob"> по документации, операционистом<br
+                                                    class="desk">
+                                            </p>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="how-works__item item-how-works">
-                                <div class="item-how-works__stage">2 этап</div>
-                                <h3 class="item-how-works__title">Договор</h3>
-                                <div class="item-how-works__text">
-                                    <div class="item-how-works__text-container">
-                                        <p>
-                                            Предоставляем просчет по конкретному<br>
-                                            инвойсу и шаблоны документов для<br>
-                                            перевода ДС. Заключаем договор и заявку<br>
-                                            на перевод средств в офисе Доверки или<br>
-                                            дистанционно
-                                        </p>
+                                <div class="how-works__item item-how-works">
+                                    <div class="item-how-works__stage">2 этап</div>
+                                    <h3 class="item-how-works__title">Договор</h3>
+                                    <div class="item-how-works__text">
+                                        <div class="item-how-works__text-container">
+                                            <p>
+                                                Предоставляем просчет по конкретному<br>
+                                                инвойсу и шаблоны документов для<br>
+                                                перевода ДС. Заключаем договор и заявку<br>
+                                                на перевод средств в офисе Доверки или<br>
+                                                дистанционно
+                                            </p>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="how-works__item item-how-works">
-                                <div class="item-how-works__stage">3 этап</div>
-                                <h3 class="item-how-works__title">Перевод средств</h3>
-                                <div class="item-how-works__text">
-                                    <div class="item-how-works__text-container">
-                                        <p>
-                                            Ждем перевод от клиента на нашу<br>
-                                            нерезидентную компанию со счетом<br>
-                                            в российском банке. Предоставляем<br>
-                                            платежные поручения с отметкой банка<br>
-                                            об исполнении
-                                        </p>
+                                <div class="how-works__item item-how-works">
+                                    <div class="item-how-works__stage">3 этап</div>
+                                    <h3 class="item-how-works__title">Перевод средств</h3>
+                                    <div class="item-how-works__text">
+                                        <div class="item-how-works__text-container">
+                                            <p>
+                                                Ждем перевод от клиента на нашу<br>
+                                                нерезидентную компанию со счетом<br>
+                                                в российском банке. Предоставляем<br>
+                                                платежные поручения с отметкой банка<br>
+                                                об исполнении
+                                            </p>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="how-works__item item-how-works">
-                                <div class="item-how-works__stage">4 этап</div>
-                                <h3 class="item-how-works__title">Завершение сделки</h3>
-                                <div class="item-how-works__text">
-                                    <div class="item-how-works__text-container">
-                                        <p>
-                                            Отправляем клиенту подтверждение перевода.<br>
-                                            В течение 24 часов клиент получает<br class="desk">
-                                            подтверждение<br class="mob"> от своего поставщика<br class="desk">
-                                            о зачислении средств.<br class="mob"> Подписываем отчет<br class="desk">
-                                            о выполненной работе
-                                        </p>
+                                <div class="how-works__item item-how-works">
+                                    <div class="item-how-works__stage">4 этап</div>
+                                    <h3 class="item-how-works__title">Завершение сделки</h3>
+                                    <div class="item-how-works__text">
+                                        <div class="item-how-works__text-container">
+                                            <p>
+                                                Отправляем клиенту подтверждение перевода.<br class="desk">
+                                                В течение 24 часов клиент получает<br class="desk">
+                                                подтверждение от своего поставщика<br class="desk">
+                                                о зачислении средств.<br class="mob"> Подписываем отчет<br class="desk">
+                                                о выполненной работе
+                                            </p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -1007,17 +1106,13 @@
                                     <div class="calculator__item item-calculator">
                                         <div class="item-calculator__title">Страна отправителя</div>
                                         <div class="item-calculator__body">
-                                            <div class="item-calculator__dropdown dropdown">
+                                            <div class="item-calculator__dropdown dropdown dropdown__country">
                                                 <button class="dropdown__btn">
                                                     Россия
                                                 </button>
-                                                <ul class="dropdown__list">
-                                                    <li class="dropdown__list-item" data-dropdown="Россия">Россия</li>
-                                                    <li class="dropdown__list-item" data-dropdown="Россия">Россия 2</li>
-                                                    <li class="dropdown__list-item" data-dropdown="Россия">Россия 3</li>
-                                                    <li class="dropdown__list-item" data-dropdown="Россия">Россия 4</li>
-                                                    <li class="dropdown__list-item" data-dropdown="Россия">Россия 5</li>
-                                                </ul>
+                                                <div class="dropdown__body">
+                                                    <ul class="dropdown__list"></ul>
+                                                </div>
                                                 <input type='text' name='age' value='Россия'
                                                     class='dropdown__input-hidden'>
                                             </div>
@@ -1026,17 +1121,14 @@
                                     <div class="calculator__item item-calculator">
                                         <div class="item-calculator__title">Страна получателя</div>
                                         <div class="item-calculator__body">
-                                            <div class="item-calculator__dropdown dropdown">
+                                            <div class="item-calculator__dropdown dropdown dropdown__country">
                                                 <button class="dropdown__btn">
                                                     Китай
                                                 </button>
-                                                <ul class="dropdown__list">
-                                                    <li class="dropdown__list-item" data-dropdown="Китай">Китай</li>
-                                                    <li class="dropdown__list-item" data-dropdown="Китай">Китай 2</li>
-                                                    <li class="dropdown__list-item" data-dropdown="Китай">Китай 3</li>
-                                                    <li class="dropdown__list-item" data-dropdown="Китай">Китай 4</li>
-                                                    <li class="dropdown__list-item" data-dropdown="Китай">Китай 5</li>
-                                                </ul>
+                                                <div class="dropdown__body">
+                                                    <ul class="dropdown__list">
+                                                    </ul>
+                                                </div>
                                                 <input type='text' name='age' value='Китай'
                                                     class='dropdown__input-hidden'>
                                             </div>
@@ -1049,13 +1141,20 @@
                                                 <button class="dropdown__btn">
                                                     20 000
                                                 </button>
-                                                <ul class="dropdown__list">
-                                                    <li class="dropdown__list-item" data-dropdown="20 000">20 000</li>
-                                                    <li class="dropdown__list-item" data-dropdown="30 000">30 000</li>
-                                                    <li class="dropdown__list-item" data-dropdown="40 000">40 000</li>
-                                                    <li class="dropdown__list-item" data-dropdown="50 000">50 000</li>
-                                                    <li class="dropdown__list-item" data-dropdown="60 000">60 000</li>
-                                                </ul>
+                                                <div class="dropdown__body">
+                                                    <ul class="dropdown__list">
+                                                        <li class="dropdown__list-item" data-dropdown="20 000">20 000
+                                                        </li>
+                                                        <li class="dropdown__list-item" data-dropdown="30 000">30 000
+                                                        </li>
+                                                        <li class="dropdown__list-item" data-dropdown="40 000">40 000
+                                                        </li>
+                                                        <li class="dropdown__list-item" data-dropdown="50 000">50 000
+                                                        </li>
+                                                        <li class="dropdown__list-item" data-dropdown="60 000">60 000
+                                                        </li>
+                                                    </ul>
+                                                </div>
                                                 <input type='text' name='age' value='20 000'
                                                     class='dropdown__input-hidden'>
                                             </div>
@@ -1651,7 +1750,7 @@
                                     Свяжитесь с нами и мы предложим лучший вариант.
                                 </p>
                             </div>
-                            <a href="" class="request__btn btn btn_big btn_orange">Оставить заявку</a>
+                            <a href="" class="request__btn btn btn_big btn_orange consultation-open">Оставить заявку</a>
                         </div>
                     </div>
                 </div>
@@ -1700,6 +1799,7 @@
     </div>
 </footer>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="js/app.min.js"></script>
